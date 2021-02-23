@@ -1,391 +1,272 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="en" dir="ltr">
 
 <head>
 
+  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <title>Hot or Not: the Maxwell's Demon problem</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--Fontawesome Icons-->
+  <link rel="stylesheet" href="vendor/fa/all.min.css">
 
-  <!-- Custom styles for this template -->
-  <link href="css/simple-sidebar.css" rel="stylesheet">
+  <!--Basic Bootstrap CSS-->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
 
-      <!--Fontawesome Icons-->
-      <link rel="stylesheet" href="https://nycehs.github.io/Portal-Core-Repo/fontawesome/css/all.min.css">
+  <!--Custom CSS-->
+  <link rel="stylesheet" href="custom.css">
 
 </head>
 
+
+
 <body>
 
-  <div class="container-fluid bg-dark border-bottom">
-    <div class="row no-gutters">
-      <div class="col">
-        <H1 class="text-center my-4 text-light"><em><strong>Hot or Not: the Maxwell's Demon problem</strong></em></H1>
-      </div>
-    </div>
-  </div>
-
-  <div class="d-flex" id="wrapper">
 
 
 
-    <!-- Sidebar -->
-    <div class="bg-dark border-top border-right" id="sidebar-wrapper">
-      <div class="list-group list-group-flush ">
+  <body class="scrollspy-container" data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+    <main role="main">
 
-        <div class="list-group-item list-group-item-action bg-dark pb-4">
-          <a href="#" onclick="runIntro();"><strong>Introduction</strong></a>
+      <!-- Add your custom image class below (replace 'oculus' with your own custom class) -->
+      <div class="d-flex flex-column titleslide" style="height: 250px; background-color: #212529;">
+
+        <div class="container-fluid my-auto">
+          <div class="medium my-3 text-center">
+            <h1 class="display-4 titleheader text-light"><em><strong>Hot or Not: the Maxwell's Demon
+                  Problem</strong></em></h1>
+          </div>
         </div>
+        <!-- .container -->
 
-        <div class="list-group-item list-group-item-action bg-dark mt-1">
-          <p>1.  <a href="#" onclick="trackOne();"><i class="fas fa-play-circle"></i>&nbsp;14-A</a>
-        </div>
-
-        <div class="list-group-item list-group-item-action bg-dark mt-1">
-          <p>2. <a href="#" onclick="trackTwo();"><i class="fas fa-play-circle"></i>&nbsp;Big World</a>
-        </div>
-
-        <div class="list-group-item list-group-item-action bg-dark mt-1">
-          <p>3. <a href="#" onclick="trackThree();"><i class="fas fa-play-circle"></i>&nbsp;90 Years Later</a>
-        </div>
-
-        <div class="list-group-item list-group-item-action bg-dark mt-1">
-          <p>4. <a href="#" onclick="trackFour();"><i class="fas fa-play-circle"></i>&nbsp;Life During Wartime</a>
-        </div>
-
-        <div class="list-group-item list-group-item-action bg-dark mt-1">
-          <p>5. <a href="#" onclick=""><i class="fas fa-play-circle"></i>&nbsp;Confidence Man</a>
-        </div>
-
-        <div class="list-group-item list-group-item-action bg-dark mt-1">
-          <p>6. <a href="#" onclick=""><i class="fas fa-play-circle"></i>&nbsp;Grapefruit</a>
-        </div>
-
-        <div class="list-group-item list-group-item-action bg-dark mt-1">
-          <p>7. <a href="#" onclick=""><i class="fas fa-play-circle"></i>&nbsp;Bringing It Down</a>
-        </div>
-
-        <div class="list-group-item list-group-item-action bg-dark mt-1">
-          <p>8. <a href="#" onclick=""><i class="fas fa-play-circle"></i>&nbsp;Fireproof Safe/Tin Airplanes</a>
-        </div>
-
-        <div class="list-group-item list-group-item-action bg-dark mt-1">
-          <p>9. <a href="#" onclick=""><i class="fas fa-play-circle"></i>&nbsp;Raleigh</a>
-        </div>
-
-        <div class="list-group-item list-group-item-action bg-dark mt-1">
-          <p>10. <a href="#" onclick=""><i class="fas fa-play-circle"></i>&nbsp;Fuck This Job</a>
-        </div>
-
-        <div class="list-group-item list-group-item-action bg-dark mt-1">
-          <p>11. <a href="#" onclick=""><i class="fas fa-play-circle"></i>&nbsp;Karen</a>
-        </div>
-
-        <div class="list-group-item list-group-item-action bg-dark mt-1">
-          <p>12. <a href="#" onclick=""><i class="fas fa-play-circle"></i>&nbsp;Love Song For Liam</a>
-        </div>
-
-        <div class="list-group-item list-group-item-action bg-dark mt-1">
-          <p>13. <a href="#" onclick=""><i class="fas fa-play-circle"></i>&nbsp;Vampires/Bonedogs</a>
-        </div>
-
-        <div class="list-group-item list-group-item-action bg-dark mt-1">
-          <p>14. <a href="#" onclick=""><i class="fas fa-play-circle"></i>&nbsp;Bus Stop</a>
-        </div>
-
-        <div class="list-group-item list-group-item-action bg-dark mt-1">
-          <p>15. <a href="#" onclick=""><i class="fas fa-play-circle"></i>&nbsp;Four Square</a>
-        </div>
-
-
-
-      </div>
-    </div>
-    <!-- /#sidebar-wrapper -->
-
-    <!-- Page Content -->
-    <div id="page-content-wrapper border-top">
-
-      <nav class="navbar navbar-expand-lg navbar-light ml-3">
-        <button class="btn btn-light" id="menu-toggle"><i class="fas fa-angle-left"></i><i class="fas fa-angle-left"></i> Tracklist</button>
-      </nav>
-
-      <div class="container-fluid">
-
-        <div id="intro" style="display: block">
-
-          <div class="col-lg-10 col-sm-12 mx-auto">
-            <div class="card bg-dark text-white mx-4 my-4">
-              <img src="images/mdll.JPG" class="card-img" alt="...">
-              <div class="card-img-overlay">
-                <h2 class="card-title">What happens when you grow up?</h2>
-                <p class="card-text">“[Maxwell's Demon's] B-Sides and Rarities takes place in the world of noise and nakedly honest emotion that pops up during the decade where youthful optimism morphs into a very adult reckoning of the real world […] A hot mess of a debut.” -Coke Machine Glow</p>
-              </div>
-            </div>
-  
-            <div class="px-4 mb-4">
-              <hr>
-              <p class="card-text">"These songs sound like they were recorded in a small room with no doors and a wall completely covered in amps in a three-apartment building across from an auto parts store on a working class street on the edge of the neighborhood.</p>
-              <p class="card-text">Put B-sides and Rarities on, and instantly the fuzzy noise pop that wafts out of your speakers will carry you to an era where people fought post-adolescent social anxiety with oblique literary references incorporated into songs played with a guitar tuned to 1992.</p>
-              <p class="card-text"> All over the country, young, eager and most likely stoned groups of well-intentioned youths are forming bands. They’re scraping together money and buying secondhand guitars and teaching themselves to play the drums on a kit they found in a crumbling barn in the wilds of New Jersey. But only Maxwell’s Demon will lead us all to the promised land, where beer flows like wine and the chorus of angels has been replaced by Archers of Loaf.” -Bailey Somers and Tim Fernholz, 2008</p>
-              <hr>
-              <p>Being teenagers in New Jersey in the 1990s meant we were always looking for something better. We could fill the gas tank in Mom's station wagon with a twenty and hit Rt 17, cross county lines to pick up a bandmate, and stop at Guitar Center to fiddle and dream. "Fake Plastic Trees" and other songs about the suburbs were in the tape deck. We knew New York City. We were raised to believe that the world was ours, and we didn't want it - we wanted something realer. We were smart but nobody is wise at that age.</p>
+        <!-- Toggle #main-nav on mobile. Comment this out if there are no chapters -->
+        <div class="container-fluid d-xl-none d-lg-none">
+          <div class="narrow">
+            <div class="btn-toggle narrow">
+              <button class="btn btn-block btn-lg btn-primary shadow" data-toggle="collapse" data-target="#sidebar-nav"
+                aria-expanded="false" aria-controls="sidebar-nav">
+                <span class="title">Full Playlist</span>
+              </button>
             </div>
           </div>
         </div>
 
-
-
-        <div id="trackOne" style="display: none">
-          <div class="col-lg-7 col-sm-11 mx-auto pt-4">
-            <h2 class="card-title">Track 1: 14-A</h2>
-
-            <img src="images/mdll.JPG" class="img-responsive my-4" style="width:100%;">
-            <p class="card-text">So in our first few years of finding our way around a fretboard, Chris's Aunt Patty let us use her barn in Ho-Ho-Kus, New Jersey. On weekends we'd lug amps up the rickety stairs and plonk thin sounds from our new guitars and gingerly thomp on some found drums. </p>
-            <p class="card-text">Of <em>course</em> we titled a song after a highway exit - one part accurate title about the inspiration and two-parts thumbing our noses at our classmates from Queens who'd ask "Which exit?" as if they were clever. When we were teens we looked for meaning. We've been trying.</p>
-            <p>We called ourselves Green. It was the kind of name that we only realize was fitting now that we're deep into our thirties and feeling nostalgic. </p>
-            <hr>
-            <p class="card-text">So while Matt was away at college, Evan phoned with an absurd proposition: we each buy a mic and a cable, run them into "the little German mixer," and line out to a tape deck: we could <em>record.</em> Now, this was when there was no GarageBand - only garage bands. To cut a demo tape - and to do it <em>yourself?</em> - this was an accomplishment.</p>
-
-
-            <div class="my-4">
-              <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/836662507&color=%23110e16&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/therealmattio" title="mattio" target="_blank" style="color: #cccccc; text-decoration: none;">mattio</a> · <a href="https://soundcloud.com/therealmattio/which-side-are-you-on" title="Which Side Are You On?" target="_blank" style="color: #cccccc; text-decoration: none;">Which Side Are You On?</a></div>
-            </div>
-            <p>After a few more years of barn jams and bedroom practice sessions produced, we assembled our first fully along foray into recorded music with <em>Fitter, Happier, and More Productive</em>:
-              <ul><li>One in the Trees</li>
-                <li>Dead Trees and Draft Boards</li>
-                <li>14-A</li>
-                <li>Two in the Trees</li>
-                <li>Cow on the Pull</li>
-                <li>Here and Gone In A Second</li>
-              </ul>
-
-          </div>
-
-        </div>
-
-
-
-        <div id="trackTwo" style="display: none">
-          <div class="col-lg-7 col-sm-11 mx-auto pt-4">
-              <h2>Track 2: Big World</h2>
-              <p>Having made it through years spent recording the terrible and long jams of beginners and now exploring our world as songwriters, we took another step. We got better at the drums though none of us was a drummer. Chris abandoned the bass in favor of the guitar and the pen. We found the pitch most of the time. </p>
-              <p>And so by the time Matt graduated - with Evan and Chris to follow a couple years later - those barn jams and bedroom practice sessions resulted in <em>Signal-to-Noise</em>, fully equipped as a rock band with our own tentative drumming, more distortion, and one less instrumental jam than <em>Fitter/Happier</em>:
-              <ul>
-                <li>Big World</li>
-                <li>Newscaster</li>
-                <li>Rockaby for the Disillusioned</li>
-                <li>90 Years Later</li>
-                <li>House Arrest</li>
-                <li>New Jersey is Sinking</li>
-                <li>Signal-to-Noise</li>
-              </ul></p>
-
-              <div class="my-4">
-                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/836662483&color=%23110e16&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/therealmattio" title="mattio" target="_blank" style="color: #cccccc; text-decoration: none;">mattio</a> · <a href="https://soundcloud.com/therealmattio/murderers-and-mourners" title="Murderers And Mourners" target="_blank" style="color: #cccccc; text-decoration: none;">Murderers And Mourners</a></div>
-              </div>
-
-
-
-              <img class="img-responsive my-4" src="images/mdll.JPG" style="width: 100%;">
-
-          </div>
-        </div>
-
-
-
-        <div id="trackThree" style="display: none">
-          <div class="col-lg-7 col-sm-11 mx-auto pt-4">
-              <h2>Track 3:  90 Years Later</h2>
-              <p>It was the start of the gmail era - archive everything - so we can now find the emails we sent to everybody we knew announcing our <strong>first real show</strong> - August 2005 at Don Hill's. We still have the video from our half-hour long set. It was raining outside and leaking inside, drips catching the stage lights as Chris's dad toggles between regular and nightvision on the camcorder. That's right - we've got video of the whole thing, and you know what? It's not bad.</p>
-
-
-              <div class="my-4">
-                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/836662483&color=%23110e16&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/therealmattio" title="mattio" target="_blank" style="color: #cccccc; text-decoration: none;">mattio</a> · <a href="https://soundcloud.com/therealmattio/murderers-and-mourners" title="Murderers And Mourners" target="_blank" style="color: #cccccc; text-decoration: none;">Murderers And Mourners</a></div>
-              </div>
-
-
-
-              <img class="img-responsive my-4" src="images/mdll.JPG" style="width: 100%;">
-
-          </div>
-        </div>
-
-
-
-
-        <div id="trackFour" style="display: none">
-          <div class="col-lg-7 col-sm-11 mx-auto pt-4">
-              <h2>Track 4:  Life During Wartime</h2>
-              <p>One short year later - or was it two? - Chris signed a lease on an apartment in Bushwick and we moved our amplifiers in. Matt was in the Bronx and Evan was in Jersey City but the point was that we had all coalesced in the same area. Our twenties were fresh and new, our jobs were awful, but for the first time in five or six years  (out of about seven as a band, by that point), we were all in the same place again. </p>
-
-
-
-              <div class="my-4">
-                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/836662483&color=%23110e16&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/therealmattio" title="mattio" target="_blank" style="color: #cccccc; text-decoration: none;">mattio</a> · <a href="https://soundcloud.com/therealmattio/murderers-and-mourners" title="Murderers And Mourners" target="_blank" style="color: #cccccc; text-decoration: none;">Murderers And Mourners</a></div>
-              </div>
-
-
-
-              <img class="img-responsive my-4" src="images/mdll.JPG" style="width: 100%;">
-
-          </div>
-        </div>
-
-
-
-
-<!--text zone-->
-  
-  <script>
-    function runIntro(){
-      console.log("go time")
-      document.getElementById("intro").style.display = "block";
-      document.getElementById("trackOne").style.display = "none";
-      document.getElementById("trackTwo").style.display = "none";
-      document.getElementById("trackThree").style.display = "none";
-      document.getElementById("trackFour").style.display = "none";
-      document.getElementById("trackFive").style.display = "none";
-      document.getElementById("trackSix").style.display = "none";
-      document.getElementById("trackSeven").style.display = "none";
-      document.getElementById("trackEight").style.display = "none";
-      document.getElementById("trackNine").style.display = "none";
-      document.getElementById("trackTen").style.display = "none";
-      document.getElementById("trackEleven").style.display = "none";
-      document.getElementById("trackTwelve").style.display = "none";
-      document.getElementById("trackThirteen").style.display = "none";
-      document.getElementById("trackFourteen").style.display = "none";
-      document.getElementById("trackFifteen").style.display = "none";
-      document.getElementById("end").style.display = "none";
-    }
-
-
-  function trackOne() {
-    document.getElementById("intro").style.display = "none";
-    document.getElementById("trackOne").style.display = "block";
-    document.getElementById("trackTwo").style.display = "none";
-    document.getElementById("trackThree").style.display = "none";
-      document.getElementById("trackFour").style.display = "none";
-      document.getElementById("trackFive").style.display = "none";
-      document.getElementById("trackSix").style.display = "none";
-      document.getElementById("trackSeven").style.display = "none";
-      document.getElementById("trackEight").style.display = "none";
-      document.getElementById("trackNine").style.display = "none";
-      document.getElementById("trackTen").style.display = "none";
-      document.getElementById("trackEleven").style.display = "none";
-      document.getElementById("trackTwelve").style.display = "none";
-      document.getElementById("trackThirteen").style.display = "none";
-      document.getElementById("trackFourteen").style.display = "none";
-      document.getElementById("trackFifteen").style.display = "none";
-      document.getElementById("end").style.display = "none";
-  }
-
-  function trackTwo() {
-    document.getElementById("intro").style.display = "none";
-    document.getElementById("trackOne").style.display = "none";
-    document.getElementById("trackTwo").style.display = "block";
-    document.getElementById("trackThree").style.display = "none";
-      document.getElementById("trackFour").style.display = "none";
-      document.getElementById("trackFive").style.display = "none";
-      document.getElementById("trackSix").style.display = "none";
-      document.getElementById("trackSeven").style.display = "none";
-      document.getElementById("trackEight").style.display = "none";
-      document.getElementById("trackNine").style.display = "none";
-      document.getElementById("trackTen").style.display = "none";
-      document.getElementById("trackEleven").style.display = "none";
-      document.getElementById("trackTwelve").style.display = "none";
-      document.getElementById("trackThirteen").style.display = "none";
-      document.getElementById("trackFourteen").style.display = "none";
-      document.getElementById("trackFifteen").style.display = "none";
-      document.getElementById("end").style.display = "none";
-  }
-
-  function trackThree() {
-    document.getElementById("intro").style.display = "none";
-    document.getElementById("trackOne").style.display = "none";
-    document.getElementById("trackTwo").style.display = "none";
-    document.getElementById("trackThree").style.display = "block";
-      document.getElementById("trackFour").style.display = "none";
-      document.getElementById("trackFive").style.display = "none";
-      document.getElementById("trackSix").style.display = "none";
-      document.getElementById("trackSeven").style.display = "none";
-      document.getElementById("trackEight").style.display = "none";
-      document.getElementById("trackNine").style.display = "none";
-      document.getElementById("trackTen").style.display = "none";
-      document.getElementById("trackEleven").style.display = "none";
-      document.getElementById("trackTwelve").style.display = "none";
-      document.getElementById("trackThirteen").style.display = "none";
-      document.getElementById("trackFourteen").style.display = "none";
-      document.getElementById("trackFifteen").style.display = "none";
-      document.getElementById("end").style.display = "none";
-  }
-
-  function trackFour() {
-    document.getElementById("intro").style.display = "none";
-    document.getElementById("trackOne").style.display = "none";
-    document.getElementById("trackTwo").style.display = "none";
-    document.getElementById("trackThree").style.display = "none";
-      document.getElementById("trackFour").style.display = "block";
-      document.getElementById("trackFive").style.display = "none";
-      document.getElementById("trackSix").style.display = "none";
-      document.getElementById("trackSeven").style.display = "none";
-      document.getElementById("trackEight").style.display = "none";
-      document.getElementById("trackNine").style.display = "none";
-      document.getElementById("trackTen").style.display = "none";
-      document.getElementById("trackEleven").style.display = "none";
-      document.getElementById("trackTwelve").style.display = "none";
-      document.getElementById("trackThirteen").style.display = "none";
-      document.getElementById("trackFourteen").style.display = "none";
-      document.getElementById("trackFifteen").style.display = "none";
-      document.getElementById("end").style.display = "none";
-  }
-
-
-  </script>
-
-<!--end zone-->
-
-
-
-
-
-
-
-
-
-
-
-        <!--Comment out basic documentation
-        <h1 class="mt-4">Simple Sidebar</h1>
-        <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
-        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p>
-        -->
-
       </div>
-      <!-- /container-fluid-->
-    </div>
-    <!-- /#page-content-wrapper -->
 
-  </div>
-  <!-- /#wrapper -->
+      <!--#main-nav - comment this out if there are no chapters-->
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Menu Toggle Script -->
-  <script>
-    $("#menu-toggle").click(function(e) {
-      e.preventDefault();
-      $("#wrapper").toggleClass("toggled");
-    });
-  </script>
+
+
+
+
+
+
+
+      <article class="container-fluid" id="skip-header-target">
+
+        <div class="row">
+
+          <div class="col-xl-3 border-right">
+            <div class="sticky-top narrow collapse d-xl-block" id="sidebar-nav">
+
+              <nav class="mx-xl-n2 pt-4 py-xl-0" role="navigation" id="myScrollspy">
+
+                <a class="sr-only sr-only-focusable skip-menu" href="#primary-content">Skip Nav</a>
+
+                <iframe width="100%" height="600px" scrolling="yes" frameborder="no" allow="autoplay"
+                  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1212802198&color=%23110e16&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                <div
+                  style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                  <a href="https://soundcloud.com/frictionlessrecords" title="Maxwell&#x27;s Demon" target="_blank"
+                    style="color: #cccccc; text-decoration: none;">Maxwell&#x27;s
+                    Demon</a> · <a href="https://soundcloud.com/frictionlessrecords/sets/remasters-in-progress"
+                    title="Remasters in progress" target="_blank"
+                    style="color: #cccccc; text-decoration: none;">Remasters in progress</a>
+                </div>
+
+              </nav>
+
+            </div>
+            <!-- .sticky-top -->
+
+          </div>
+          <!-- .col -->
+
+
+          <!--start main content section-->
+          <div class="col-xl-8 overflow-hidden fs-rg mr-auto" id="primary-content">
+            <div class="narrow">
+
+              <!--Start home-->
+              <div id="home" class="holder show">
+                <div class="card bg-dark text-white mx-4 my-4">
+                  <img src="images/mdll.JPG" class="card-img" alt="...">
+                  <div class="card-img-overlay">
+                    <p class="card-text">“[Maxwell's Demon's] B-Sides and Rarities takes place in the
+                      world
+                      of noise and
+                      nakedly honest emotion that pops up during the decade where youthful optimism
+                      morphs
+                      into a very adult
+                      reckoning of the real world […] A hot mess of a debut.” -Coke Machine Glow</p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="inset mx-4">
+                  <p>"These songs sound like they were recorded in a small room with no
+                    doors and a wall
+                    completely covered in amps in a three-apartment building across from an auto parts
+                    store
+                    on a working
+                    class street on the edge of the neighborhood.</p>
+                  <p>Put B-sides and Rarities on, and instantly the fuzzy noise pop that
+                    wafts out of your
+                    speakers will carry you to an era where people fought post-adolescent social anxiety
+                    with oblique
+                    literary references incorporated into songs played with a guitar tuned to 1992.</p>
+                  <p> All over the country, young, eager and most likely stoned groups
+                    of
+                    well-intentioned
+                    youths are forming bands. They’re scraping together money and buying secondhand
+                    guitars
+                    and teaching
+                    themselves to play the drums on a kit they found in a crumbling barn in the wilds of
+                    New
+                    Jersey. But
+                    only Maxwell’s Demon will lead us all to the promised land, where beer flows like
+                    wine
+                    and the chorus of
+                    angels has been replaced by Archers of Loaf.” -Bailey Somers and Tim Fernholz, 2008
+                  </p>
+                </div>
+
+                <hr>
+
+                <div class="mx-4">
+                  <h2>The Maxwell's Demon Problem</h2>
+                  <em>Remasters, re-issues, re-living, commentary, and multimedia</em>
+                  <button type="button" class="btn btn-primary float-right" onclick="showTrack(1)">Start here</button>
+                </div>
+              </div>
+              <!--End home-->
+
+
+              <!--Start track template-->
+              <div id="tr1" class="holder hide">
+                <div class="card bg-dark text-white mx-4 my-4">
+                  <img src="images/bedroom.jpg" class="card-img" alt="...">
+                  <div class="card-img-overlay my-auto">
+                    <h2 class="card-text tracktitle">Track 1. 14A.</h2>
+                  </div>
+                </div>
+
+                <div class="inset mx-4 my-4">
+                  <p>Being teenagers in New Jersey in the 1990s meant we were always looking for something better. I
+                    would fill the gas tank
+                    in Mom's station wagon with a twenty and hit Rt 17, cross county lines to pick up Evan, take him to
+                    Chris’s, and we’d go
+                    to Guitar Center to fiddle and dream. "Fake Plastic Trees" and other songs about the suburbs were in
+                    the tape deck. We
+                    knew New York City. We were raised to believe that the world was ours, and we didn't want it - we
+                    wanted something
+                    realer. We were smart, I guess, but nobody is wise at that age. Still, Evan could really dish out
+                    some poetry from
+                    behind an acoustic guitar. <span class="attr">-MM</span></p>
+                  <hr>
+                  <p>14A is my exit, and those radio antenna were the ones I’d drive by in my father’s beat up old
+                    Buick, an hour past the
+                    learner’s permit curfew, on my way back from playing guitar at Chris’ house. They rise out of the
+                    otherwise nothingness
+                    of the Meadowlands, and they’ve made an appearance in at least one later Le Samourai song. If I
+                    remember correctly,
+                    someone took a handheld recorder to the escalators of one PATH station or another to get that little
+                    sound bed under the
+                    intro guitar riff. <span class="attr">-ESB</span>
+                  </p>
+                  <hr>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget tempus magna, nec luctus augue.
+                    Sed mattis et nisl
+                    sit amet porttitor. Sed vitae congue libero, in accumsan sem. Praesent vitae commodo leo. Praesent
+                    fringilla porta nibh
+                    sit amet condimentum. Nulla id turpis id neque aliquet dapibus. Morbi eu bibendum ipsum, non
+                    venenatis ante. Mauris
+                    tellus eros, porta ac tempus id, faucibus nec est. <span class="attr">-CJN</span></p>
+                </div>
+
+                <div class="mx-4">
+                  <button type="button" class="btn btn-primary float-right" onclick="showTrack(2)">Next Track</button>
+
+                </div>
+
+              </div>
+              <!--End track template-->
+
+
+
+
+
+
+              <br><br><br><br><br><br>
+            </div>
+            <!-- .narrow -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+          <!-- .col -->
+
+
+        </div>
+        <!-- .row -->
+
+      </article>
+      <!-- #primary-content -->
+
+    </main>
+
+  </body>
+  <!-- #content -->
+
+
+
+  <!-- jQuery (full, compressed version) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  <!-- Popper.js and Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+  <script src="custom.js"></script>
+
 
 </body>
 
