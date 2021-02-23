@@ -71,7 +71,7 @@
 
         <div class="row">
 
-          <div class="col-xl-3 border-right">
+          <div class="col-lg-3 border-right">
             <div class="sticky-top narrow collapse d-xl-block" id="sidebar-nav">
 
               <nav class="mx-xl-n2 pt-4 py-xl-0" role="navigation" id="myScrollspy">
@@ -89,6 +89,13 @@
                     style="color: #cccccc; text-decoration: none;">Remasters in progress</a>
                 </div>
 
+                <hr>
+
+                <button type="button" class="btn btn-block btn-light mr-4" onclick="showTrack(9999)">Home</button>
+
+                <button type="button" class="btn btn-block btn-light mr-4" onclick="showTrack(999)">Appendix</button>
+
+
               </nav>
 
             </div>
@@ -99,8 +106,8 @@
 
 
           <!--start main content section-->
-          <div class="col-xl-8 overflow-hidden fs-rg mr-auto" id="primary-content">
-            <div class="narrow">
+          <div class="col-lg-8 overflow-hidden fs-rg mr-auto" id="primary-content">
+            <div class="narrow mx-auto">
 
               <!--Start home-->
               <div id="home" class="holder show">
@@ -118,6 +125,11 @@
                 </div>
 
                 <hr>
+
+                <div class="mx-4">
+                  <h2>The Maxwell's Demon Problem</h2>
+                  <p><em>Remasters, re-issues, re-living, commentary, and multimedia (2021)</em></p>
+                </div>
 
                 <div class="inset mx-4">
                   <p>"These songs sound like they were recorded in a small room with no
@@ -143,32 +155,36 @@
                     only Maxwell’s Demon will lead us all to the promised land, where beer flows like
                     wine
                     and the chorus of
-                    angels has been replaced by Archers of Loaf.” -Bailey Somers and Tim Fernholz, 2008
+                    angels has been replaced by Archers of Loaf.” <span class="attr">-Bailey Somers and Tim Fernholz,
+                      2008</span>
                   </p>
                 </div>
 
                 <hr>
 
-                <div class="mx-4">
-                  <h2>The Maxwell's Demon Problem</h2>
-                  <em>Remasters, re-issues, re-living, commentary, and multimedia</em>
-                  <button type="button" class="btn btn-primary float-right" onclick="showTrack(1)">Start here</button>
-                </div>
+                <button type="button" class="btn btn-primary float-right" onclick="showTrack(1)">Start here
+                  >>></button>
+                <br><br>
               </div>
               <!--End home-->
 
 
-              <!--Start track template-->
+              <!--Start track-->
               <div id="tr1" class="holder hide">
-                <div class="card bg-dark text-white mx-4 my-4">
-                  <img src="images/bedroom.jpg" class="card-img" alt="...">
-                  <div class="card-img-overlay my-auto">
-                    <h2 class="card-text tracktitle">Track 1. 14A.</h2>
+
+                <div class="cardcarrier">
+                  <div class="tracktitle h2 mt-4">Track 1: 14A</div>
+                  <div class="card bg-dark text-white mb-4">
+                    <img src="images/bedroom.jpg" class="card-img" alt="...">
                   </div>
                 </div>
 
-                <div class="inset mx-4 my-4">
-                  <p>Being teenagers in New Jersey in the 1990s meant we were always looking for something better. I
+
+
+
+                <div class="inset mr-4 my-4">
+                  <p>Being teenagers in New Jersey in the 1990s meant we were always looking for <span
+                      class="highlighter">something better.</span> I
                     would fill the gas tank
                     in Mom's station wagon with a twenty and hit Rt 17, cross county lines to pick up Evan, take him to
                     Chris’s, and we’d go
@@ -184,7 +200,8 @@
                     Buick, an hour past the
                     learner’s permit curfew, on my way back from playing guitar at Chris’ house. They rise out of the
                     otherwise nothingness
-                    of the Meadowlands, and they’ve made an appearance in at least one later Le Samourai song. If I
+                    of <span class="highlighter">the Meadowlands</span>, and they’ve made an appearance in at least one
+                    later Le Samourai song. If I
                     remember correctly,
                     someone took a handheld recorder to the escalators of one PATH station or another to get that little
                     sound bed under the
@@ -193,20 +210,86 @@
                   <hr>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget tempus magna, nec luctus augue.
                     Sed mattis et nisl
-                    sit amet porttitor. Sed vitae congue libero, in accumsan sem. Praesent vitae commodo leo. Praesent
+                    sit amet porttitor. Sed vitae congue libero, in accumsan sem. Praesent <span
+                      class="highlighter">vitae commodo leo</span>. Praesent
                     fringilla porta nibh
                     sit amet condimentum. Nulla id turpis id neque aliquet dapibus. Morbi eu bibendum ipsum, non
                     venenatis ante. Mauris
                     tellus eros, porta ac tempus id, faucibus nec est. <span class="attr">-CJN</span></p>
                 </div>
 
-                <div class="mx-4">
-                  <button type="button" class="btn btn-primary float-right" onclick="showTrack(2)">Next Track</button>
+                <button type="button" class="btn btn-primary float-right" onclick="showTrack(2)">Next Track</button>
 
+                <button type="button" class="btn btn-light " onclick="showTrack(9999)">Back to
+                  home</button>
+              </div>
+              <!--End track-->
+
+
+
+              <!--Start track-->
+              <div id="tr2" class="holder hide">
+
+                <div class="cardcarrier">
+                  <div class="tracktitle h2 mt-4">Track 2: Big World</div>
+                  <div class="card bg-dark text-white mb-4">
+                    <img src="images/greenisdead.jpg" class="card-img" alt="...">
+                  </div>
                 </div>
 
+
+
+
+                <div class="inset mr-4 my-4">
+                  <p>Having made it through years spent recording the terrible and long jams of beginners and learners,
+                    now exploring our
+                    world as songwriters, we took another step. We got better at the drums though none of us was a
+                    drummer. Chris abandoned
+                    the bass in favor of the guitar and the pen. We found the pitch - most of the time. And so by the
+                    time I graduated from
+                    college - with Evan and Chris soon to follow - those barn jams and bedroom practice
+                    sessions resulted in
+                    Signal-to-Noise, <span class="highlighter">fully equipped</span> as a rock band with our own
+                    tentative
+                    drumming, more distortion, and
+                    one less
+                    instrumental jam than Fitter/Happier. “Big World” was a big step forward for us in precision
+                    - not the least of which involved the tiny turns of the knob on Chris’s Marshall amp to get the
+                    perfect delay timing on
+                    my rhythm guitar.
+                    <span class="attr">-MM</span>
+                  </p>
+                  <hr>
+                  <p>This is the first song where I remember we were using a big digital multi-track recorder. Still
+                    with the now-beat up
+                    microphones we bought for the Barn (I last used mine to record lead guitar a year ago - still
+                    kicking). This song always
+                    makes me think of our sneaking into <span class="highlighter">some now-dead bar</span> or another
+                    underage,
+                    Matt holding forth about
+                    something. This was
+                    the era when we realized our guitars would make big loud noises if we let them, and we began to
+                    spend a lot of time just
+                    letting the texture of the sound run wild
+                    <span class="attr">-ESB</span>
+                  </p>
+                  <hr>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget tempus magna, nec luctus augue.
+                    Sed mattis et nisl
+                    sit amet porttitor. Sed vitae congue libero, in accumsan sem. Praesent <span
+                      class="highlighter">vitae commodo
+                      leo</span>. Praesent
+                    fringilla porta nibh
+                    sit amet condimentum. Nulla id turpis id neque aliquet dapibus. Morbi eu bibendum ipsum, non
+                    venenatis ante. Mauris
+                    tellus eros, porta ac tempus id, faucibus nec est. <span class="attr">-CJN</span></p>
+                </div>
+
+                <button type="button" class="btn btn-primary float-right" onclick="showTrack(3)">Next Track</button>
+
+                <button type="button" class="btn btn-light " onclick="showTrack(2)">Previous track</button>
               </div>
-              <!--End track template-->
+              <!--End track-->
 
 
 

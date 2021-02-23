@@ -37,8 +37,8 @@ main {
 }
 
 .inset {
-  border-left: 15px solid #949494;
-  background: #f0f0f0;
+  border-left: 15px solid rgba(218, 218, 218, 1);
+  background: #f5f4f4;
   padding-left: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -56,12 +56,49 @@ main {
 }
 
 .tracktitle {
-  background-color: rgba(132,132,132,0.5);
-  border-radius: 3px;
+  background-color: #212529;
+  color: white;
   padding: 5px;
   font-weight: 900;
+  margin-right: 25px;
+  margin-bottom: 0px;
+  padding-left: 25x;
+  font-style: italic;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.cardcarrier {
+  /* border-left: 15px solid rgba(184,32,187,.5); */
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .fb {
   float: bottom;
+}
+
+.highlighter {
+  background-color: #b820bb!important;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-weight: 540;
+  color: white;
+}
+
+.titleheader {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.narrow {
+  max-width: 45rem;
+}
+.card,
+.card-img {
+  border-radius: 0px!important;
+  border: none!important;
+  margin-right: 25px!important;
 }
