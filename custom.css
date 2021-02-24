@@ -1,29 +1,3 @@
-.togglebutton {
-  font-size: 16;
-  padding: 1px 15px;
-  border-radius: 5px;
-  background-color: #e9e9e9;
-  color: #696969 !important;
-  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0, 07);
-  cursor: pointer;
-  display: inline-block;
-  margin-bottom: 5px;
-  width: 49%;
-
-}
-
-.togglebutton:hover {
-  background-color: #bce3ff;
- }
-
-
-.highlight {
-  background-color: #429ddd !important;
-  color: #ffffff !important;
-    font-weight: 550;
-
-}
-
 .hide {
   display:none;
 }
@@ -37,12 +11,13 @@ main {
 }
 
 .inset {
-  border-left: 15px solid rgba(218, 218, 218, 1);
-  background: #f5f4f4;
+  border-left: 15px solid #B2C2AC;
+  background: #FBFAF6;
   padding-left: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 5px;
+  box-shadow: 7px 7px 3px 0px #dfdfdf;
 }
 
 .border {
@@ -53,14 +28,14 @@ main {
   float:right;
   font-weight: bold;
   font-style: italic;
+  color: #273469;
 }
 
 .tracktitle {
-  background-color: #212529;
-  color: white;
-  padding: 5px;
+  background-color: #273469;
+  color: #FBFAF6;
+  padding: 25px;
   font-weight: 900;
-  margin-right: 25px;
   margin-bottom: 0px;
   padding-left: 25x;
   font-style: italic;
@@ -69,9 +44,8 @@ main {
 }
 
 .cardcarrier {
-  /* border-left: 15px solid rgba(184,32,187,.5); */
-  border-top-right-radius: 15px;
-  border-bottom-left-radius: 15px;
+  margin-left: 20px;
+  /* max-width: 75%; */
 }
 
 .fb {
@@ -79,18 +53,23 @@ main {
 }
 
 .highlighter {
-  background-color: #b820bb!important;
+  background-color: #faa916!important; 
   padding-left: 3px;
   padding-right: 3px;
-  font-weight: 540;
-  color: white;
+  font-weight: 600;
+  color: #273469;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 
 .titleheader {
   padding-top: 15px;
-  padding-bottom: 15px;
-  margin-left: 25px;
-  margin-right: 25px;
+  padding-bottom: 25px;
+  margin-left: 125px;
+  margin-right: 125px;
+  color: #FBFAF6;
+  font-weight: 800;
+  border-top: 15px solid #273469;
 }
 
 .narrow {
@@ -101,4 +80,28 @@ main {
   border-radius: 0px!important;
   border: none!important;
   margin-right: 25px!important;
+}
+
+
+h1,h2,h3,h4,h5 {
+  color: #517365;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background-color: #273469;
+  border-color: #273469;
+}
+
+.btn-primary:hover {
+    background-color: #324286;
+}
+
+.btn-light {
+  background-color: #FBFAF6;
+  border-color: #517365;
+}
+
+.btn-light:hover {
+  background-color: #faa916;
 }

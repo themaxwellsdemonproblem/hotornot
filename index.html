@@ -24,7 +24,7 @@
 
 
 
-<body>
+<body id="top">
 
 
 
@@ -33,11 +33,11 @@
     <main role="main">
 
       <!-- Add your custom image class below (replace 'oculus' with your own custom class) -->
-      <div class="d-flex flex-column titleslide" style="height: 250px; background-color: #212529;">
+      <div class="d-flex flex-column titleslide" style="height: 250px; background-color: #517365;">
 
         <div class="container-fluid my-auto">
-          <div class="medium my-3 text-center">
-            <h1 class="display-4 titleheader text-light"><em><strong>Hot or Not: the Maxwell's Demon
+          <div class="medium my-3 text-center transpo">
+            <h1 class="display-4 titleheader"><em><strong>Hot or Not: the Maxwell's Demon
                   Problem</strong></em></h1>
           </div>
         </div>
@@ -107,14 +107,15 @@
 
           <!--start main content section-->
           <div class="col-lg-8 overflow-hidden fs-rg mr-auto" id="primary-content">
-            <div class="narrow mx-auto">
+            <div class="">
 
               <!--Start home-->
-              <div id="home" class="holder show">
+              <div id="home" class="holder show narrow mx-auto">
                 <div class="card bg-dark text-white mx-4 my-4">
                   <img src="images/mdll.JPG" class="card-img" alt="...">
                   <div class="card-img-overlay">
-                    <p class="card-text">“[Maxwell's Demon's] B-Sides and Rarities takes place in the
+                    <p class="card-text" style="color:#faa916">“[Maxwell's Demon's] B-Sides and Rarities takes place in
+                      the
                       world
                       of noise and
                       nakedly honest emotion that pops up during the decade where youthful optimism
@@ -172,56 +173,105 @@
               <!--Start track-->
               <div id="tr1" class="holder hide">
 
-                <div class="cardcarrier">
-                  <div class="tracktitle h2 mt-4">Track 1: 14A</div>
-                  <div class="card bg-dark text-white mb-4">
-                    <img src="images/bedroom.jpg" class="card-img" alt="...">
+                <div class="row no-gutters">
+
+                  <div class="col-12">
+                    <div class="tracktitle h2 mt-4">
+                      Track 1: 14A
+                    </div>
                   </div>
+
+                  <div class="col-md-6">
+                    <div class="inset my-4">
+
+                      <p>14A is my exit, and those radio antenna were the ones I’d drive by in my father’s beat up old
+                        Buick, an hour past the
+                        learner’s permit curfew, on my way back from playing guitar at Chris’ house. They rise out of
+                        the
+                        otherwise nothingness
+                        of <span class="highlighter">the Meadowlands</span>, and they’ve made an appearance in at least
+                        one
+                        later Le Samourai song. If I
+                        remember correctly,
+                        someone took a handheld recorder to the escalators of one PATH station or another to get that
+                        little
+                        sound bed under the
+                        intro guitar riff. <span class="attr">-ESB</span>
+                      </p>
+                    </div>
+
+                    <div class="inset my-4">
+                      <p>Being teenagers in New Jersey in the 1990s meant we were always looking for <span
+                          class="highlighter">something
+                          better.</span> I
+                        would fill the gas tank
+                        in my parents' station wagon with a twenty and cross county lines to pick up Evan, take him to
+                        Chris’s, and then we’d go
+                        to Guitar Center to noodle and dream. "Fake Plastic Trees" and other songs about the suburbs
+                        were in
+                        the tape deck. We
+                        knew New York City. We were raised to believe that the world was ours, and we didn't want it -
+                        we
+                        wanted something
+                        realer. We were smart, I guess, but nobody is wise at that age. Still, Evan could really dish
+                        out
+                        some poetry from
+                        behind an acoustic guitar: "There must be someone out there trying to talk to us". <span
+                          class="attr">-MM</span>
+                      </p>
+                    </div>
+
+                    <div class="inset my-4">
+
+                      <p>This song by Evan holds up the best out of anything from the first era of the band, back when
+                        we called ourselves Green
+                        (after talking Mattio out of “The Normal”). We tracked this in my bedroom in Glen Rock like so
+                        much of the stuff we
+                        recorded early in college, after our earliest high school days jamming and four-tracking in the
+                        loft of the Barn at Aunt
+                        Patty’s place nearby. This was probably the last song where I played bass on record before
+                        switching to six-string and
+                        drums. I hear this and think of those <span class="highlighter">night drives on the
+                          Turnpike</span> and the rest of the awful web
+                        of north Jersey
+                        highways, of running with guitars slung over shoulders and amps lashed onto rattly handcarts to
+                        catch train rides over
+                        and under swamps and rivers. We met in high school in New York, and finally moved there years
+                        later, but New Jersey is
+                        where our music came from, at least in 2004.
+                        <span class="attr">-CJN</span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="cardcarrier">
+
+                      <img src="images/bedroom.jpg" class="card-img img-fluid my-4" alt="...">
+
+                      <button type="button" class="btn btn-primary float-right" onclick="showTrack(2)">Next
+                        Track</button>
+
+                      <button type="button" class="btn btn-light" onclick="showTrack(9999)" href="#top">Back to
+                        home</button>
+
+                    </div>
+                  </div>
+
+
+
+
+
                 </div>
 
 
 
 
-                <div class="inset mr-4 my-4">
-                  <p>Being teenagers in New Jersey in the 1990s meant we were always looking for <span
-                      class="highlighter">something better.</span> I
-                    would fill the gas tank
-                    in Mom's station wagon with a twenty and hit Rt 17, cross county lines to pick up Evan, take him to
-                    Chris’s, and we’d go
-                    to Guitar Center to fiddle and dream. "Fake Plastic Trees" and other songs about the suburbs were in
-                    the tape deck. We
-                    knew New York City. We were raised to believe that the world was ours, and we didn't want it - we
-                    wanted something
-                    realer. We were smart, I guess, but nobody is wise at that age. Still, Evan could really dish out
-                    some poetry from
-                    behind an acoustic guitar. <span class="attr">-MM</span></p>
-                  <hr>
-                  <p>14A is my exit, and those radio antenna were the ones I’d drive by in my father’s beat up old
-                    Buick, an hour past the
-                    learner’s permit curfew, on my way back from playing guitar at Chris’ house. They rise out of the
-                    otherwise nothingness
-                    of <span class="highlighter">the Meadowlands</span>, and they’ve made an appearance in at least one
-                    later Le Samourai song. If I
-                    remember correctly,
-                    someone took a handheld recorder to the escalators of one PATH station or another to get that little
-                    sound bed under the
-                    intro guitar riff. <span class="attr">-ESB</span>
-                  </p>
-                  <hr>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget tempus magna, nec luctus augue.
-                    Sed mattis et nisl
-                    sit amet porttitor. Sed vitae congue libero, in accumsan sem. Praesent <span
-                      class="highlighter">vitae commodo leo</span>. Praesent
-                    fringilla porta nibh
-                    sit amet condimentum. Nulla id turpis id neque aliquet dapibus. Morbi eu bibendum ipsum, non
-                    venenatis ante. Mauris
-                    tellus eros, porta ac tempus id, faucibus nec est. <span class="attr">-CJN</span></p>
-                </div>
 
-                <button type="button" class="btn btn-primary float-right" onclick="showTrack(2)">Next Track</button>
 
-                <button type="button" class="btn btn-light " onclick="showTrack(9999)">Back to
-                  home</button>
+
+
+
               </div>
               <!--End track-->
 
@@ -230,64 +280,94 @@
               <!--Start track-->
               <div id="tr2" class="holder hide">
 
-                <div class="cardcarrier">
-                  <div class="tracktitle h2 mt-4">Track 2: Big World</div>
-                  <div class="card bg-dark text-white mb-4">
-                    <img src="images/greenisdead.jpg" class="card-img" alt="...">
+                <div class="row no-gutters">
+                  <div class="col-12">
+                    <div class="tracktitle h2 mt-4">
+                      Track 2: Big World
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+
+                    <div class="inset mr-4 my-4">
+                      <p>Having made it through years spent recording the terrible and long jams of beginners and
+                        learners,
+                        now exploring our
+                        world as songwriters, we took another step. We got better at the drums though none of us was a
+                        drummer. Chris abandoned
+                        the bass in favor of the guitar and the pen. We found the pitch - most of the time. And so by
+                        the
+                        time I graduated from
+                        college - with Evan and Chris soon to follow - those barn jams and bedroom practice
+                        sessions resulted in
+                        Signal-to-Noise, <span class="highlighter">fully equipped</span> as a rock band with our own
+                        tentative
+                        drumming, more distortion, and
+                        one less
+                        instrumental jam than Fitter/Happier. “Big World” was a big step forward for us in precision
+                        - not the least of which involved the tiny turns of the knob on Chris’s Marshall amp to get the
+                        perfect delay timing on
+                        my rhythm guitar.
+                        <span class="attr">-MM</span>
+                      </p>
+                    </div>
+
+                    <div class="inset mr-4 my-4">
+                      <p>“Big World” wasn’t just the first time I ever played drums on a track: it was practically the
+                        first time I ever played
+                        drums, period. I had gone back to the Barn, dug up my cousin Brennan’s battered old drum set
+                        from his 90s NJ punk/ska
+                        band, and dragged it up to my attic room in Glen Rock. We only had a high-hat cymbal, no crash
+                        or ride. I had been
+                        playing guitar for a while by then but had never been confident in my early attempts at
+                        songwriting until this point,
+                        and adding drums to the mix seemed like a good idea too. It was the summer of 2005, after
+                        sophomore year of college, and
+                        I was an intern at Men’s Health Magazine in New York. We spent a weekend in the Glen Rock attic
+                        to record the whole
+                        Signal to Noise EP, and we were having such a time <span class="highlighter">I called in sick to
+                          work</span> Monday with the “stomach flu” so we could
+                        finish the job. Upon my return to work, my editor made me write a sidebar piece (ostensibly for
+                        the magazine) about why
+                        there is technically no such thing as the stomach flu. It is actually called gastroenteritis, a
+                        kindly doctor informed
+                        me. Whatever you call it, I didn’t have it. <span class="attr">-CJN</span></p>
+                    </div>
+
+                    <div class="inset mr-4 my-4">
+                      <p>This is the first song where I remember we were using a big digital multi-track recorder. Still
+                        with the now-beat up
+                        microphones we bought for the Barn (I last used mine to record lead guitar a year ago - still
+                        kicking). This song always
+                        makes me think of our sneaking into <span class="highlighter">some now-dead bar</span> or
+                        another
+                        underage,
+                        Matt holding forth about
+                        something. This was
+                        the era when we realized our guitars would make big loud noises if we let them, and we began to
+                        spend a lot of time just
+                        letting the texture of the sound run wild
+                        <span class="attr">-ESB</span>
+                      </p>
+                    </div>
+
+
+                  </div>
+
+
+                  <div class="col-md-6">
+                    <div class="cardcarrier">
+                      <img src="images/greenisdead.jpg" class="card-img img-fluid my-4" alt="...">
+
+                      <button type="button" class="btn btn-primary float-right" onclick="showTrack(3)">Next
+                        Track</button>
+
+                      <button type="button" class="btn btn-light" onclick="showTrack(1)">Previous track</button>
+
+                    </div>
                   </div>
                 </div>
 
-
-
-
-                <div class="inset mr-4 my-4">
-                  <p>Having made it through years spent recording the terrible and long jams of beginners and learners,
-                    now exploring our
-                    world as songwriters, we took another step. We got better at the drums though none of us was a
-                    drummer. Chris abandoned
-                    the bass in favor of the guitar and the pen. We found the pitch - most of the time. And so by the
-                    time I graduated from
-                    college - with Evan and Chris soon to follow - those barn jams and bedroom practice
-                    sessions resulted in
-                    Signal-to-Noise, <span class="highlighter">fully equipped</span> as a rock band with our own
-                    tentative
-                    drumming, more distortion, and
-                    one less
-                    instrumental jam than Fitter/Happier. “Big World” was a big step forward for us in precision
-                    - not the least of which involved the tiny turns of the knob on Chris’s Marshall amp to get the
-                    perfect delay timing on
-                    my rhythm guitar.
-                    <span class="attr">-MM</span>
-                  </p>
-                  <hr>
-                  <p>This is the first song where I remember we were using a big digital multi-track recorder. Still
-                    with the now-beat up
-                    microphones we bought for the Barn (I last used mine to record lead guitar a year ago - still
-                    kicking). This song always
-                    makes me think of our sneaking into <span class="highlighter">some now-dead bar</span> or another
-                    underage,
-                    Matt holding forth about
-                    something. This was
-                    the era when we realized our guitars would make big loud noises if we let them, and we began to
-                    spend a lot of time just
-                    letting the texture of the sound run wild
-                    <span class="attr">-ESB</span>
-                  </p>
-                  <hr>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget tempus magna, nec luctus augue.
-                    Sed mattis et nisl
-                    sit amet porttitor. Sed vitae congue libero, in accumsan sem. Praesent <span
-                      class="highlighter">vitae commodo
-                      leo</span>. Praesent
-                    fringilla porta nibh
-                    sit amet condimentum. Nulla id turpis id neque aliquet dapibus. Morbi eu bibendum ipsum, non
-                    venenatis ante. Mauris
-                    tellus eros, porta ac tempus id, faucibus nec est. <span class="attr">-CJN</span></p>
-                </div>
-
-                <button type="button" class="btn btn-primary float-right" onclick="showTrack(3)">Next Track</button>
-
-                <button type="button" class="btn btn-light " onclick="showTrack(2)">Previous track</button>
               </div>
               <!--End track-->
 
