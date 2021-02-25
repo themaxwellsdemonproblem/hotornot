@@ -5,9 +5,13 @@ function showTrack(x) {
     if (x === 1) {
         document.getElementById('tr1').classList.toggle('hide')
         document.getElementById('tr1').classList.add('show')
+        window.location.href = "#tr1";
+
     } else if (x === 2) {
         document.getElementById('tr2').classList.toggle('hide');
-        document.getElementById('tr2').classList.add('show')
+        document.getElementById('tr2').classList.add('show');
+        window.location.href = "#tr2";
+
     } else if (x === 3) {
         document.getElementById('tr3').classList.toggle('hide');
         document.getElementById('tr3').classList.add('show')
@@ -53,9 +57,10 @@ function showTrack(x) {
     } else {
         document.getElementById('home').classList.add('show');
         document.getElementById('home').classList.remove('hide');
+        window.location.href = "#top";
+
     };
 
-    window.location.href = "#top";
 
 }
 
