@@ -54,7 +54,16 @@ function showTrack(x) {
     } else if (x === 999) {
         document.getElementById('appendix').classList.toggle('hide');
         document.getElementById('appendix').classList.add('show');
-    } else {
+        window.location.href = "#appendix";
+
+    } else if (x === 111) {
+        document.getElementById('origin').classList.toggle('hide');
+        document.getElementById('origin').classList.add('show');
+        window.location.href = "#origin";
+
+    }
+
+    else {
         document.getElementById('home').classList.add('show');
         document.getElementById('home').classList.remove('hide');
         window.location.href = "#top";
