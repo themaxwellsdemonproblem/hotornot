@@ -116,3 +116,9 @@ h1,h2,h3,h4,h5 {
 .btn-light:hover {
   background-color: #faa916;
 }
+
+                  .outset {
+                    border-top: 10px solid #faa916;
+                    padding-top: 10px;
+                    margin-bottom: 50px;
+                  }
